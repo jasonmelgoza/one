@@ -1,0 +1,14 @@
+// Colors
+
+$colorMap: (
+  primary: (
+    base: #2bde73,
+    dark: darken(#2bde73, 5),
+    light: lighten(#2bde73, 5)
+  ),
+  secondary: (
+    base: #252629,
+    dark: darken(#252629, 5),
+    light: lighten(#252629, 5)
+  )
+);

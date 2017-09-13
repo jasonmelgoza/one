@@ -1,20 +1,31 @@
+//
+// O N E
+// v0.0.1
+//
+
+// Functions
 @import
-  "normalize",
-  "rouge-github"
+  "functions/color-map"
 ;
 
-* {
-  box-sizing: border-box
-}
+// Variables
+@import
+  "variables/colors"
+;
 
-body,
-html {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 14px;
-  background: #fff;
-  color: rgb(0,0,0);
-  line-height: 1;
-  margin: 0;
-  padding: 0
-}
+// Mixins
+@import
+  "mixins/links"
+;
+
+// Modules
+@import
+  "modules/normalize",
+  "modules/global",
+  "modules/topbar",
+  "modules/hero",
+  "modules/grid",
+  "modules/content",
+  "modules/bottombar",
+  "modules/highlight"
+;
