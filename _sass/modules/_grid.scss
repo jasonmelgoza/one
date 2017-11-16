@@ -4,9 +4,8 @@
 
 .grid {
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   grid: 1fr / auto-flow 1fr;
+
   @media screen and (max-width: 768px) {
     display: block;
   }
