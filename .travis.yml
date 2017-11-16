@@ -9,4 +9,5 @@ deploy:
   on:
     tags: true
 
+install: script/bootstrap
 script: script/cibuild
