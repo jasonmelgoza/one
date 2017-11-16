@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+rvm: 2.2
+sudo: false
+deploy:
+  provider: rubygems
+  api_key:
+    secure: q7p9Wk0rL+DbjWQy8bjcz5RoTYcxKlyhrkXs0VFSqhkLCu6bPUcy5G6fgsbTxNVlxhKcoxbc+35i1FkghWAGH99lMx1W9+91ALhZCGCpE3M1nj8ywC8r22Ri2tuuS8uVIil7X6qaA1FB/yafqt47VqRU3VRCNtmu/pgqvdX/47H5o2xaKH1nvbrXhqLvre9cnco3LeL4+T5WT4vlPYc53oWCCr94H/4VLcacfbAQ2F6k1tlfGdOHwkqlOjDTwZB58I132tJhobm4JjWTO2yrTJA7vDA4P0Xl48SCu+NkM7i5DBI0t5nKXL0zclwEnOLgie0IBShjQPxfkOVXSFYK08ecNtd+yM5y/WjCanDV1qx7pp0z7B8G4MYn+oSElPNe+EjHkftxEhujRn6aurjSyntz5Yr8iGUKDShmQ6//z9UyvcQnSmsAxN59nCszc0kASDMi97R33J3TIRHpsFPA56FJpq9BJgticQKvE1wNCY1lauqUA53jEfVghy/DrfEi7w/XBrWl57Mwab+FqxM8VFkNO0QDoaX/sGG00O+KxCaddHDy5MUy0KyOa/dB7jbvDuhsM6zbZXWm7uRgaPUyYw9xpJEWWTvVE9gKlZa3+el6Te+oNhbQCRX3GNChIhMfbGT9IPf9i00DL+VkF0YicAnh/YbM0Y3EAbkJ2/A2yp4=
+  on:
+    tags: true
+
+install: script/bootstrap
+script: script/cibuild
