@@ -1,7 +1,0 @@
-// Color Map
-
-@function color($color, $tone: "base") {
-  @if map-has-key($colorMap, $color) {
-    @return map-get(map-get($colorMap, $color), $tone);
-  }
-}
