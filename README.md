@@ -12,7 +12,13 @@
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass
+Build your site with a few simple utility classes.
+
+```html
+<div class="container mx-auto py-4">
+  <p>Hello</p>
+</div>
+```
 
 ## License
 
