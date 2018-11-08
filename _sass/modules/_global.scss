@@ -26,7 +26,17 @@ body {
 
 /* Links */
 a {
-  @include unstyled-link;
+  color: #1a8cff;
+  text-decoration: none;
+
+  &:hover {
+    color: #1a8cff;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
 }
 
 /* Layout utilities */
@@ -92,3 +102,8 @@ a {
 .mr-4 { margin-right: $spacer-4; }
 .mb-4 { margin-bottom: $spacer-4; }
 .ml-4 { margin-left: $spacer-4; }
+
+/* Clearfix */
+.clearfix {
+  @include clearfix;
+}
