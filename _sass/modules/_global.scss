@@ -59,6 +59,19 @@ a {
   .sm-width-full { width: 100% !important; }
 }
 
+.block        { display: block !important; }
+.inline-block { display: inline-block !important; }
+
+.table { display: table !important; }
+
+.left { float: left; }
+.right { float: right; }
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Padding */
 .px-0 { padding-left: 0; padding-right:  0 }
 .py-0 { padding-top: 0;  padding-bottom: 0 }
